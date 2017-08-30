@@ -47,6 +47,7 @@ header {
 	width: 100%;
 	background-color: #eee;
 	margin-top: 25px;
+	margin-bottom: 40px;
 	text-align: center;
 	line-height: 45px;
 	color: #c1c1c1;
@@ -154,7 +155,7 @@ header {
 	padding: 0px 0px;
 }
 .navbar-default .navbar-header {
-	border-bottom: 1px solid #dbdbdb;
+
 }
 .navbar-default .navbar-brand {
 	float: right;
@@ -162,9 +163,13 @@ header {
 	padding-right: 0px;
 	display: block;
 }
+.navbar-default .navbar-brand:hover {
+	color: #2d709d;	
+}
 .navbar .navbar-collapse {
 	padding: 0px 0px;
 	border: none;
+	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 }
 .navbar-toggle {
@@ -190,7 +195,7 @@ header {
 	
 }
 .nav.navbar-nav.navigation-top>li>a {
-	padding: 10px 15px;
+	padding: 10px 10px;
 	color: #969696;
 	transition: .3s;
 }
@@ -215,12 +220,65 @@ header {
 }
 footer {
 	background-color: #194365;
-	height: 400px;
+	min-height: 410px;
+	height: auto;
+}
+.footer-top {
+	min-height: 85px;
+	height: auto;
+	background-color: #dbdbdb;
+	padding-bottom: 15px;
+}
+.footer-advertising {
+	height: 55px;
+	width: 100%;
+	background-color: #eee;
+	margin-top: 15px;
+	text-align: center;
+	line-height: 55px;
+	color: #c1c1c1;
+	font-size: 20px;
+}
+.footer-middle {
+	min-height: 285px;
+	height: auto;
+	padding: 20px;
+}
+.footer-site-map ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-site-map-link a {
+	display: inline-block;
+	height: 25px;
+	color: #fff;
+	font-size: 14px;
+}
+
+
+.footer-facebook-link {
+	width: 280px;
+	height: 220px;
+	background-color: #eee;
+}
+.footer-bottom {
+	background-color: #262626;
+}
+.footer-copyright {
+	min-height: 40px;
+	height: auto;
+	color: #fff;
+	font-size: 12px;
+	padding: 13px 0px;
 }
 
 @media (min-width: 768px) {
 	.header-top {
 		display: block;
+	}
+	.header-middle-advertising {
+		margin-bottom: 25px;
 	}
 	.navbar-default .navbar-brand {
 		display: none;
@@ -240,5 +298,14 @@ footer {
 	}
 	.nav.navbar-nav.navigation-bottom {
 		font-size: 16px;
+	}
+	.hp-display-none {
+		display: block;
+	}
+	.footer-middle {
+		padding: 40px;
+	}
+	.footer-facebook-link {
+		float: right;
 	}
 }
